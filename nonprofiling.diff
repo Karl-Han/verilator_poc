@@ -1,0 +1,8 @@
+--- posedge_clk/nonprofiling	2024-03-14 22:23:58.918740119 -0700
++++ posedge_validate/nonprofiling	2024-03-14 22:24:52.522197994 -0700
+@@ -1,4 +1,4 @@
+-30.80user 0.89system 0:31.74elapsed 99%CPU (0avgtext+0avgdata 4096maxresident)k
++15.40user 0.74system 0:16.18elapsed 99%CPU (0avgtext+0avgdata 4352maxresident)k
+ 0inputs+983048outputs (0major+473minor)pagefaults 0swaps
+           1
+ [SelectTest]Done:           1

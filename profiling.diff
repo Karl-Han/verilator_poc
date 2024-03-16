@@ -1,0 +1,10 @@
+--- posedge_clk/profiling	2024-03-14 22:24:35.630368813 -0700
++++ posedge_validate/profiling	2024-03-14 22:25:11.438006727 -0700
+@@ -1,5 +1,5 @@
+-34.81user 0.92system 0:35.78elapsed 99%CPU (0avgtext+0avgdata 4352maxresident)k
+-0inputs+983184outputs (0major+518minor)pagefaults 0swaps
++17.40user 0.75system 0:18.21elapsed 99%CPU (0avgtext+0avgdata 4352maxresident)k
++0inputs+983192outputs (0major+518minor)pagefaults 0swaps
+           1
+ [SelectTest]Done:           1
+ [Validate]Start:           1

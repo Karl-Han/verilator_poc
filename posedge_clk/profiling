@@ -1,0 +1,19 @@
+34.81user 0.92system 0:35.78elapsed 99%CPU (0avgtext+0avgdata 4352maxresident)k
+0inputs+983184outputs (0major+518minor)pagefaults 0swaps
+          1
+[SelectTest]Done:           1
+[Validate]Start:           1
+[Validate]Done:           1
+[SelectTest]Start:           2
+[SelectTest]Done:           2
+[Validate]Start:           2
+[Validate]Done:           2
+[SelectTest]Start:           3
+[SelectTest]Done:           3
+[Validate]Start:           3
+[Validate]Done:           3
+[SelectTest]Start:           4
+[SelectTest]Done:           4
+[Validate]Start:           4
+[Validate]Done:           4
+- performance_degrade.sv:27: Verilog $finish

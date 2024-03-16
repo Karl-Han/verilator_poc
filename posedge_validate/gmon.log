@@ -1,0 +1,1174 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 91.00     11.53    11.53        5     2.31     2.51  Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*)
+  3.08     11.92     0.39 41943050     0.00     0.00  _vl_vsformat(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*, __va_list_tag*)
+  2.92     12.29     0.37 41944635     0.00     0.00  VerilatedContextImp::fdToFpList(unsigned int)
+  0.95     12.41     0.12 41943030     0.00     0.00  VerilatedContextImp::fdWrite(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.87     12.52     0.11 41943030     0.00     0.00  VL_FWRITEF(unsigned int, char const*, ...)
+  0.32     12.56     0.04 41944635     0.00     0.00  VerilatedFpList::push_back(_IO_FILE*)
+  0.08     12.57     0.01  9765640     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.08     12.58     0.01                             std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > _vl_vsformat_time<double>(char*, double, int, bool, unsigned long)
+  0.00     12.58     0.00 125832572     0.00     0.00  std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00     12.58     0.00 41944848     0.00     0.00  VerilatedMutex::lock()
+  0.00     12.58     0.00 41944817     0.00     0.00  VerilatedLockGuard::~VerilatedLockGuard()
+  0.00     12.58     0.00 41944667     0.00     0.00  Verilated::threadContextp()
+  0.00     12.58     0.00    11030     0.00     0.00  _vl_vsss_peek(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00     12.58     0.00     8635     0.00     0.00  _vl_vsss_advance(_IO_FILE*, int&)
+  0.00     12.58     0.00     1605     0.00     0.00  VL_CVT_I_FP(unsigned int)
+  0.00     12.58     0.00     1605     0.00     0.00  VerilatedContextImp::fdToFp(unsigned int)
+  0.00     12.58     0.00     1595     0.00     0.00  _vl_vsss_skipspace(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00     12.58     0.00     1169     0.00     0.00  std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count()
+  0.00     12.58     0.00      840     0.00     0.00  _vl_vsss_read_str(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char*, char const*) [clone .constprop.0]
+  0.00     12.58     0.00      822     0.00     0.00  std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear()
+  0.00     12.58     0.00      800     0.00     0.00  _vl_vsscanf(_IO_FILE*, int, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, __va_list_tag*)
+  0.00     12.58     0.00      800     0.00     0.00  VL_FSCANF_IX(unsigned int, char const*, ...)
+  0.00     12.58     0.00      732     0.00     0.00  VlTriggerScheduler::commit(char const*)
+  0.00     12.58     0.00      458     0.00     0.00  VlTriggerVec<4ul>::clear()
+  0.00     12.58     0.00      366     0.00     0.00  Vtb___024root___timing_commit(Vtb___024root*)
+  0.00     12.58     0.00      366     0.00     0.00  Vtb___024root___eval_phase__act(Vtb___024root*)
+  0.00     12.58     0.00      366     0.00     0.00  Vtb___024root___eval_triggers__act(Vtb___024root*)
+  0.00     12.58     0.00      351     0.00     0.00  std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2> const&)
+  0.00     12.58     0.00      330     0.00     0.00  VlCoroutineHandle::~VlCoroutineHandle()
+  0.00     12.58     0.00      238     0.00     0.00  VlCoroutine::VlPromise::final_suspend()
+  0.00     12.58     0.00      213     0.00     0.00  VlCoroutineHandle::VlCoroutineHandle(VlCoroutineHandle&&)
+  0.00     12.58     0.00      185     0.00     0.00  Vtb___024root___timing_resume(Vtb___024root*)
+  0.00     12.58     0.00      181     0.00     0.07  Vtb___024root___eval_phase__nba(Vtb___024root*)
+  0.00     12.58     0.00      117     0.00     0.00  _GLOBAL__sub_I__ZN9Verilated7s_debugE
+  0.00     12.58     0.00      117     0.00     0.00  VlCoroutineHandle::VlCoroutineHandle(std::__n4861::coroutine_handle<void>, std::shared_ptr<VlProcess>, VlFileLineDebug)
+  0.00     12.58     0.00      116     0.00     0.00  VlCoroutineHandle::resume()
+  0.00     12.58     0.00       97     0.00     0.00  VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>)
+  0.00     12.58     0.00       92     0.00     0.00  Vtb::Vtb(char const*)
+  0.00     12.58     0.00       92     0.00     0.00  VlDeleter::deleteAll()
+  0.00     12.58     0.00       91     0.00     0.14  Vtb___024root___eval(Vtb___024root*)
+  0.00     12.58     0.00       91     0.00     0.00  VerilatedEvalMsgQueue::process()
+  0.00     12.58     0.00       91     0.00     0.00  VerilatedThreadMsgQueue::flush(VerilatedEvalMsgQueue*)
+  0.00     12.58     0.00       91     0.00     0.00  VerilatedThreadMsgQueue::threadton()
+  0.00     12.58     0.00       91     0.00     0.00  Vtb::nextTimeSlot()
+  0.00     12.58     0.00       91     0.00     0.00  Vtb::eventsPending()
+  0.00     12.58     0.00       91     0.00     0.14  Vtb::eval_step()
+  0.00     12.58     0.00       91     0.00     0.00  Verilated::endOfEval(VerilatedEvalMsgQueue*)
+  0.00     12.58     0.00       91     0.00     0.00  VlDelayScheduler::nextTimeSlot() const
+  0.00     12.58     0.00       90     0.00     0.00  Vtb___024root___eval_nba(Vtb___024root*)
+  0.00     12.58     0.00       90     0.00     0.00  VlDelayScheduler::resume()
+  0.00     12.58     0.00       90     0.00     0.00  VlTriggerScheduler::resume(char const*)
+  0.00     12.58     0.00       62     0.00     0.00  std::mutex::lock()
+  0.00     12.58     0.00       60     0.00     0.00  std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00     12.58     0.00       45     0.00     0.00  Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*)
+  0.00     12.58     0.00       42     0.00     0.00  std::_Function_base::~_Function_base()
+  0.00     12.58     0.00       31     0.00     0.00  VlWorkerThread::addTask(void (*)(void*, bool), void*, bool)
+  0.00     12.58     0.00       31     0.00     0.00  VlWorkerThread::shutdown()
+  0.00     12.58     0.00       31     0.00     0.00  VlWorkerThread::VlWorkerThread(VerilatedContext*)
+  0.00     12.58     0.00       31     0.00     0.00  VlWorkerThread::~VlWorkerThread()
+  0.00     12.58     0.00       31     0.00     0.00  std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::~unique_ptr()
+  0.00     12.58     0.00       31     0.00     0.00  std::_Vector_base<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::~_Vector_base()
+  0.00     12.58     0.00       31     0.00     0.00  std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  0.00     12.58     0.00       31     0.00     0.00  std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  0.00     12.58     0.00       31     0.00     0.00  void std::_V2::condition_variable_any::wait<VerilatedMutex>(VerilatedMutex&)
+  0.00     12.58     0.00       31     0.00     0.00  std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(VlWorkerThread*, VerilatedContext*), VlWorkerThread*, VerilatedContext*> > >::~_State_impl()
+  0.00     12.58     0.00       31     0.00     0.00  void std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::_M_realloc_insert<void (*&)(void*, bool), void*&, bool&>(__gnu_cxx::__normal_iterator<VlWorkerThread::ExecRec*, std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> > >, void (*&)(void*, bool), void*&, bool&)
+  0.00     12.58     0.00       31     0.00     0.00  std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::_M_erase(__gnu_cxx::__normal_iterator<VlWorkerThread::ExecRec*, std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> > >)
+  0.00     12.58     0.00       29     0.00     0.00  Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*)
+  0.00     12.58     0.00       25     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  0.00     12.58     0.00       21     0.00     0.00  VerilatedMsg::VerilatedMsg(std::function<void ()> const&)
+  0.00     12.58     0.00       21     0.00     0.00  VerilatedThreadMsgQueue::post(VerilatedMsg const&)
+  0.00     12.58     0.00       21     0.00     0.00  std::function<void ()>::operator()() const
+  0.00     12.58     0.00       21     0.00     0.00  std::function<void ()>::function(std::function<void ()> const&)
+  0.00     12.58     0.00       20     0.00     0.00  VL_PRINTF_MT(char const*, ...)
+  0.00     12.58     0.00       20     0.00     0.00  _vl_string_vprintf[abi:cxx11](char const*, __va_list_tag*)
+  0.00     12.58     0.00       20     0.00     0.00  VL_WRITEF(char const*, ...)
+  0.00     12.58     0.00       20     0.00     0.00  std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+  0.00     12.58     0.00       20     0.00     0.00  __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > std::copy<std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >(std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > >)
+  0.00     12.58     0.00       20     0.00     0.00  VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>)
+  0.00     12.58     0.00       15     0.00     0.00  VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00     12.58     0.00       10     0.00     0.00  VL_FCLOSE_I(unsigned int)
+  0.00     12.58     0.00       10     0.00     0.00  VerilatedContextImp::fdClose(unsigned int)
+  0.00     12.58     0.00        8     0.00     0.00  std::__mutex_base::__mutex_base()
+  0.00     12.58     0.00        7     0.00     0.00  std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::~vector()
+  0.00     12.58     0.00        6     0.00     0.00  VL_RAND_RESET_I(int)
+  0.00     12.58     0.00        6     0.00     0.00  void std::vector<VlWorkerThread*, std::allocator<VlWorkerThread*> >::_M_realloc_insert<VlWorkerThread*>(__gnu_cxx::__normal_iterator<VlWorkerThread**, std::vector<VlWorkerThread*, std::allocator<VlWorkerThread*> > >, VlWorkerThread*&&)
+  0.00     12.58     0.00        5     0.00     0.00  VL_CVT_PACK_STR_NW[abi:cxx11](int, unsigned int const*)
+  0.00     12.58     0.00        4     0.00     0.00  Vtb___024root::__Vconfigure(bool)
+  0.00     12.58     0.00        3     0.00     0.00  VerilatedContext::checkMagic(VerilatedContext const*)
+  0.00     12.58     0.00        3     0.00     0.00  Vtb::threads() const
+  0.00     12.58     0.00        3     0.00     0.00  std::unique_ptr<VerilatedVirtualBase, std::default_delete<VerilatedVirtualBase> >::~unique_ptr()
+  0.00     12.58     0.00        2     0.00     0.00  Vtb___024root___ctor_var_reset(Vtb___024root*)
+  0.00     12.58     0.00        2     0.00     0.00  VlCoroutine::VlPromise::~VlPromise()
+  0.00     12.58     0.00        2     0.00     0.00  VlCoroutine::~VlCoroutine()
+  0.00     12.58     0.00        2     0.00     0.00  VlTriggerScheduler::~VlTriggerScheduler()
+  0.00     12.58     0.00        2     0.00     0.00  std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::_M_check_len(unsigned long, char const*) const
+  0.00     12.58     0.00        2     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const
+  0.00     12.58     0.00        2     0.00     0.00  std::_Vector_base<VlDeletable*, std::allocator<VlDeletable*> >::~_Vector_base()
+  0.00     12.58     0.00        2     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base()
+  0.00     12.58     0.00        2     0.00     0.00  _IO_FILE** std::__uninitialized_default_n_1<true>::__uninit_default_n<_IO_FILE**, unsigned long>(_IO_FILE**, unsigned long)
+  0.00     12.58     0.00        2     0.00     0.00  unsigned int* std::__uninitialized_default_n_1<true>::__uninit_default_n<unsigned int*, unsigned long>(unsigned int*, unsigned long)
+  0.00     12.58     0.00        2     0.00     0.00  std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::clear()
+  0.00     12.58     0.00        2     0.00     0.00  std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::_M_default_append(unsigned long)
+  0.00     12.58     0.00        2     0.00     0.00  std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::resize(unsigned long)
+  0.00     12.58     0.00        2     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(unsigned long)
+  0.00     12.58     0.00        2     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::resize(unsigned long)
+  0.00     12.58     0.00        1     0.00     0.00  VL_FINISH_MT(char const*, int, char const*)
+  0.00     12.58     0.00        1     0.00     0.00  Vtb___024root___eval_initial(Vtb___024root*)
+  0.00     12.58     0.00        1     0.00     0.00  Vtb___024root___eval_initial__TOP__Vtiming__0(Vtb___024root*)
+  0.00     12.58     0.00        1     0.00     0.00  vl_finish(char const*, int, char const*)
+  0.00     12.58     0.00        1     0.00     0.00  VlThreadPool::VlThreadPool(VerilatedContext*, unsigned int)
+  0.00     12.58     0.00        1     0.00     0.00  VlThreadPool::~VlThreadPool()
+  0.00     12.58     0.00        1     0.00     0.00  VlThreadPool::~VlThreadPool()
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedSyms::VerilatedSyms(VerilatedContext*)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedSyms::~VerilatedSyms()
+  0.00     12.58     0.00        1     0.00     0.00  Vtb___024root::Vtb___024root(Vtb__Syms*, char const*)
+  0.00     12.58     0.00        1     0.00     0.00  Vtb___024root::~Vtb___024root()
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedModel::VerilatedModel(VerilatedContext&)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedModule::VerilatedModule(char const*)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedModule::~VerilatedModule()
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::Serialized::Serialized()
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::commandArgs(int, char const**)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::threadPoolp()
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::threadPoolpOnClone()
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::addModel(VerilatedModel*)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::timeunit(int)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::gotFinish(bool)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::VerilatedContext()
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContext::~VerilatedContext()
+  0.00     12.58     0.00        1     0.00     0.00  VlDelayScheduler::~VlDelayScheduler()
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContextImp::commandArgVl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContextImp::commandArgsGuts(int, char const**)
+  0.00     12.58     0.00        1     0.00     0.00  VerilatedContextImp::commandArgsAddGuts(int, char const**)
+  0.00     12.58     0.00        1     0.00     0.00  Vtb::Vtb(VerilatedContext*, char const*)
+  0.00     12.58     0.00        1     0.00     0.00  Vtb::~Vtb()
+  0.00     12.58     0.00        1     0.00     0.00  Vtb::~Vtb()
+  0.00     12.58     0.00        1     0.00     0.00  Verilated::debug(int)
+  0.00     12.58     0.00        1     0.00     0.00  VlDeleter::~VlDeleter()
+  0.00     12.58     0.00        1     0.00     0.00  Vtb__Syms::Vtb__Syms(VerilatedContext*, char const*, Vtb*)
+  0.00     12.58     0.00        1     0.00     0.00  Vtb__Syms::~Vtb__Syms()
+  0.00     12.58     0.00        1     0.00     0.00  std::unique_ptr<VerilatedContext, std::default_delete<VerilatedContext> >::~unique_ptr()
+  0.00     12.58     0.00        1     0.00     0.00  std::unique_ptr<VerilatedContextImpData, std::default_delete<VerilatedContextImpData> >::~unique_ptr()
+  0.00     12.58     0.00        1     0.00     0.00  std::unique_ptr<Vtb, std::default_delete<Vtb> >::~unique_ptr()
+  0.00     12.58     0.00        1     0.00     0.00  void std::_Destroy_aux<false>::__destroy<VerilatedMsg*>(VerilatedMsg*, VerilatedMsg*)
+  0.00     12.58     0.00        1     0.00     0.00  std::_Vector_base<VlWorkerThread*, std::allocator<VlWorkerThread*> >::~_Vector_base()
+  0.00     12.58     0.00        1     0.00     0.00  std::_Vector_base<_IO_FILE*, std::allocator<_IO_FILE*> >::~_Vector_base()
+  0.00     12.58     0.00        1     0.00     0.00  std::__uniq_ptr_impl<VerilatedVirtualBase, std::default_delete<VerilatedVirtualBase> >::reset(VerilatedVirtualBase*)
+  0.00     12.58     0.00        1     0.00     0.00  std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+  0.00     12.58     0.00        1     0.00     0.00  void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<char const*&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, char const*&)
+  0.00     12.58     0.00        1     0.00     0.00  std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()
+  0.00     12.58     0.00        1     0.00     0.00  std::__cxx11::_List_base<std::pair<void (*)(void*), void*>, std::allocator<std::pair<void (*)(void*), void*> > >::_M_clear()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.08% of 12.58 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.9    0.00   12.57                 main [1]
+                0.00   12.57      91/91          Vtb::eval_step() [4]
+                0.00    0.00      91/91          VerilatedEvalMsgQueue::process() [53]
+                0.00    0.00      91/91          Verilated::endOfEval(VerilatedEvalMsgQueue*) [58]
+                0.00    0.00      91/91          Vtb::eventsPending() [57]
+                0.00    0.00      91/91          VlDelayScheduler::nextTimeSlot() const [59]
+                0.00    0.00      91/91          Vtb::nextTimeSlot() [56]
+                0.00    0.00       1/1           Verilated::debug(int) [145]
+                0.00    0.00       1/1           VerilatedContext::VerilatedContext() [136]
+                0.00    0.00       1/1           VerilatedContextImp::commandArgsGuts(int, char const**) [140]
+                0.00    0.00       1/1           VerilatedContext::commandArgs(int, char const**) [130]
+                0.00    0.00       1/1           VerilatedContext::addModel(VerilatedModel*) [133]
+                0.00    0.00       1/1           Vtb::Vtb(VerilatedContext*, char const*) [142]
+                0.00    0.00       1/1           Vtb::~Vtb() [143]
+                0.00    0.00       1/1           std::unique_ptr<Vtb, std::default_delete<Vtb> >::~unique_ptr() [151]
+                0.00    0.00       1/1           std::unique_ptr<VerilatedContext, std::default_delete<VerilatedContext> >::~unique_ptr() [149]
+-----------------------------------------------
+                0.00   12.57     181/181         Vtb___024root___eval(Vtb___024root*) [3]
+[2]     99.9    0.00   12.57     181         Vtb___024root___eval_phase__nba(Vtb___024root*) [2]
+               11.53    1.04       5/5           Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [5]
+                0.00    0.00      90/90          Vtb___024root___eval_nba(Vtb___024root*) [13]
+                0.00    0.00       5/20          VL_WRITEF(char const*, ...) [17]
+                0.00    0.00      90/458         VlTriggerVec<4ul>::clear() [38]
+-----------------------------------------------
+                0.00   12.57      91/91          Vtb::eval_step() [4]
+[3]     99.9    0.00   12.57      91         Vtb___024root___eval(Vtb___024root*) [3]
+                0.00   12.57     181/181         Vtb___024root___eval_phase__nba(Vtb___024root*) [2]
+                0.00    0.00     366/366         Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+-----------------------------------------------
+                0.00   12.57      91/91          main [1]
+[4]     99.9    0.00   12.57      91         Vtb::eval_step() [4]
+                0.00   12.57      91/91          Vtb___024root___eval(Vtb___024root*) [3]
+                0.00    0.00      91/92          VlDeleter::deleteAll() [52]
+                0.00    0.00       1/1           Vtb___024root___eval_initial(Vtb___024root*) [116]
+-----------------------------------------------
+               11.53    1.04       5/5           Vtb___024root___eval_phase__nba(Vtb___024root*) [2]
+[5]     99.9   11.53    1.04       5         Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [5]
+                0.11    0.93 41943030/41943030     VL_FWRITEF(unsigned int, char const*, ...) [6]
+                0.00    0.00       5/20          VL_WRITEF(char const*, ...) [17]
+                0.00    0.00      20/25          std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [78]
+                0.00    0.00      10/15          VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+                0.00    0.00      10/10          VerilatedContextImp::fdClose(unsigned int) [90]
+                0.00    0.00      10/10          VL_FCLOSE_I(unsigned int) [89]
+-----------------------------------------------
+                0.11    0.93 41943030/41943030     Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [5]
+[6]      8.3    0.11    0.93 41943030         VL_FWRITEF(unsigned int, char const*, ...) [6]
+                0.12    0.41 41943030/41943030     VerilatedContextImp::fdWrite(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [7]
+                0.39    0.01 41943030/41943050     _vl_vsformat(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*, __va_list_tag*) [9]
+                0.00    0.00 41943030/41944667     Verilated::threadContextp() [28]
+-----------------------------------------------
+                0.12    0.41 41943030/41943030     VL_FWRITEF(unsigned int, char const*, ...) [6]
+[7]      4.2    0.12    0.41 41943030         VerilatedContextImp::fdWrite(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [7]
+                0.37    0.04 41943030/41944635     VerilatedContextImp::fdToFpList(unsigned int) [8]
+                0.00    0.00 41943030/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00 41943030/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00 41943030/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+-----------------------------------------------
+                0.00    0.00    1605/41944635     VerilatedContextImp::fdToFp(unsigned int) [15]
+                0.37    0.04 41943030/41944635     VerilatedContextImp::fdWrite(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [7]
+[8]      3.3    0.37    0.04 41944635         VerilatedContextImp::fdToFpList(unsigned int) [8]
+                0.04    0.00 41944635/41944635     VerilatedFpList::push_back(_IO_FILE*) [10]
+-----------------------------------------------
+                0.00    0.00      20/41943050     VL_WRITEF(char const*, ...) [17]
+                0.39    0.01 41943030/41943050     VL_FWRITEF(unsigned int, char const*, ...) [6]
+[9]      3.2    0.39    0.01 41943050         _vl_vsformat(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*, __va_list_tag*) [9]
+                0.01    0.00 9765640/9765640     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [11]
+                0.00    0.00 83886120/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.04    0.00 41944635/41944635     VerilatedContextImp::fdToFpList(unsigned int) [8]
+[10]     0.3    0.04    0.00 41944635         VerilatedFpList::push_back(_IO_FILE*) [10]
+-----------------------------------------------
+                0.01    0.00 9765640/9765640     _vl_vsformat(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*, __va_list_tag*) [9]
+[11]     0.1    0.01    0.00 9765640         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     0.1    0.01    0.00                 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > _vl_vsformat_time<double>(char*, double, int, bool, unsigned long) [12]
+-----------------------------------------------
+                0.00    0.00      90/90          Vtb___024root___eval_phase__nba(Vtb___024root*) [2]
+[13]     0.0    0.00    0.00      90         Vtb___024root___eval_nba(Vtb___024root*) [13]
+                0.00    0.00      45/45          Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+-----------------------------------------------
+                0.00    0.00      45/45          Vtb___024root___eval_nba(Vtb___024root*) [13]
+[14]     0.0    0.00    0.00      45         Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+                0.00    0.00     805/1605        VerilatedContextImp::fdToFp(unsigned int) [15]
+                0.00    0.00     800/800         VL_FSCANF_IX(unsigned int, char const*, ...) [16]
+                0.00    0.00      10/20          VL_WRITEF(char const*, ...) [17]
+                0.00    0.00     805/1605        VL_CVT_I_FP(unsigned int) [31]
+                0.00    0.00       5/25          std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [78]
+                0.00    0.00       5/5           VL_CVT_PACK_STR_NW[abi:cxx11](int, unsigned int const*) [95]
+                0.00    0.00       5/15          VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+-----------------------------------------------
+                0.00    0.00     800/1605        VL_FSCANF_IX(unsigned int, char const*, ...) [16]
+                0.00    0.00     805/1605        Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+[15]     0.0    0.00    0.00    1605         VerilatedContextImp::fdToFp(unsigned int) [15]
+                0.00    0.00    1605/41944635     VerilatedContextImp::fdToFpList(unsigned int) [8]
+                0.00    0.00    1605/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00    1605/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00    1605/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+-----------------------------------------------
+                0.00    0.00     800/800         Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+[16]     0.0    0.00    0.00     800         VL_FSCANF_IX(unsigned int, char const*, ...) [16]
+                0.00    0.00     800/1605        VerilatedContextImp::fdToFp(unsigned int) [15]
+                0.00    0.00    1600/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00     800/1605        VL_CVT_I_FP(unsigned int) [31]
+                0.00    0.00     800/800         _vl_vsscanf(_IO_FILE*, int, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, __va_list_tag*) [36]
+-----------------------------------------------
+                0.00    0.00       5/20          Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [5]
+                0.00    0.00       5/20          Vtb___024root___eval_phase__nba(Vtb___024root*) [2]
+                0.00    0.00      10/20          Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+[17]     0.0    0.00    0.00      20         VL_WRITEF(char const*, ...) [17]
+                0.00    0.00      20/41943050     _vl_vsformat(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*, __va_list_tag*) [9]
+                0.00    0.00      20/20          VL_PRINTF_MT(char const*, ...) [83]
+-----------------------------------------------
+[18]     0.0    0.00    0.00     351+197     <cycle 1 as a whole> [18]
+                0.00    0.00     330             VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+                0.00    0.00      97             VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+                0.00    0.00      92             Vtb::Vtb(char const*) <cycle 1> [51]
+                0.00    0.00      29             Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+-----------------------------------------------
+                0.00    0.00       1/125832572     VerilatedContext::gotFinish(bool) [135]
+                0.00    0.00       1/125832572     VerilatedContext::timeunit(int) [134]
+                0.00    0.00       1/125832572     VerilatedSyms::~VerilatedSyms() [123]
+                0.00    0.00       1/125832572     VerilatedContextImp::commandArgsGuts(int, char const**) [140]
+                0.00    0.00       1/125832572     std::function<void ()>::function(std::function<void ()> const&) [82]
+                0.00    0.00       2/125832572     VerilatedContextImp::commandArgsAddGuts(int, char const**) [141]
+                0.00    0.00       2/125832572     std::_Function_base::~_Function_base() [64]
+                0.00    0.00       2/125832572     void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<char const*&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, char const*&) [157]
+                0.00    0.00       2/125832572     std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(unsigned long) [113]
+                0.00    0.00       5/125832572     VL_CVT_PACK_STR_NW[abi:cxx11](int, unsigned int const*) [95]
+                0.00    0.00      10/125832572     VerilatedContextImp::fdClose(unsigned int) [90]
+                0.00    0.00      15/125832572     VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+                0.00    0.00      20/125832572     _vl_string_vprintf[abi:cxx11](char const*, __va_list_tag*) [84]
+                0.00    0.00      31/125832572     VlWorkerThread::workerLoop() [279]
+                0.00    0.00      31/125832572     VlWorkerThread::addTask(void (*)(void*, bool), void*, bool) [65]
+                0.00    0.00      92/125832572     VlDeleter::deleteAll() [52]
+                0.00    0.00    1600/125832572     VL_FSCANF_IX(unsigned int, char const*, ...) [16]
+                0.00    0.00    1605/125832572     VerilatedContextImp::fdToFp(unsigned int) [15]
+                0.00    0.00 41943030/125832572     VerilatedContextImp::fdWrite(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [7]
+                0.00    0.00 83886120/125832572     _vl_vsformat(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*, __va_list_tag*) [9]
+[25]     0.0    0.00    0.00 125832572         std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00       1/41944848     VerilatedContext::gotFinish(bool) [135]
+                0.00    0.00       1/41944848     VerilatedContext::timeunit(int) [134]
+                0.00    0.00       1/41944848     VerilatedContextImp::commandArgsGuts(int, char const**) [140]
+                0.00    0.00      10/41944848     VerilatedContextImp::fdClose(unsigned int) [90]
+                0.00    0.00      15/41944848     VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+                0.00    0.00      31/41944848     VlWorkerThread::workerLoop() [279]
+                0.00    0.00      31/41944848     VlWorkerThread::addTask(void (*)(void*, bool), void*, bool) [65]
+                0.00    0.00      31/41944848     void std::_V2::condition_variable_any::wait<VerilatedMutex>(VerilatedMutex&) [73]
+                0.00    0.00      92/41944848     VlDeleter::deleteAll() [52]
+                0.00    0.00    1605/41944848     VerilatedContextImp::fdToFp(unsigned int) [15]
+                0.00    0.00 41943030/41944848     VerilatedContextImp::fdWrite(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [7]
+[26]     0.0    0.00    0.00 41944848         VerilatedMutex::lock() [26]
+-----------------------------------------------
+                0.00    0.00       1/41944817     VerilatedContext::gotFinish(bool) [135]
+                0.00    0.00       1/41944817     VerilatedContext::timeunit(int) [134]
+                0.00    0.00       1/41944817     VerilatedContextImp::commandArgsGuts(int, char const**) [140]
+                0.00    0.00      10/41944817     VerilatedContextImp::fdClose(unsigned int) [90]
+                0.00    0.00      15/41944817     VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+                0.00    0.00      31/41944817     VlWorkerThread::workerLoop() [279]
+                0.00    0.00      31/41944817     VlWorkerThread::addTask(void (*)(void*, bool), void*, bool) [65]
+                0.00    0.00      92/41944817     VlDeleter::deleteAll() [52]
+                0.00    0.00    1605/41944817     VerilatedContextImp::fdToFp(unsigned int) [15]
+                0.00    0.00 41943030/41944817     VerilatedContextImp::fdWrite(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [7]
+[27]     0.0    0.00    0.00 41944817         VerilatedLockGuard::~VerilatedLockGuard() [27]
+-----------------------------------------------
+                0.00    0.00       1/41944667     vl_finish(char const*, int, char const*) [118]
+                0.00    0.00       6/41944667     VL_RAND_RESET_I(int) [93]
+                0.00    0.00      10/41944667     VL_FCLOSE_I(unsigned int) [89]
+                0.00    0.00      15/41944667     VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+                0.00    0.00    1605/41944667     VL_CVT_I_FP(unsigned int) [31]
+                0.00    0.00 41943030/41944667     VL_FWRITEF(unsigned int, char const*, ...) [6]
+[28]     0.0    0.00    0.00 41944667         Verilated::threadContextp() [28]
+-----------------------------------------------
+                0.00    0.00    4830/11030       _vl_vsss_skipspace(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+                0.00    0.00    6200/11030       _vl_vsss_read_str(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char*, char const*) [clone .constprop.0] [34]
+[29]     0.0    0.00    0.00   11030         _vl_vsss_peek(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [29]
+-----------------------------------------------
+                0.00    0.00    3235/8635        _vl_vsss_skipspace(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+                0.00    0.00    5400/8635        _vl_vsss_read_str(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char*, char const*) [clone .constprop.0] [34]
+[30]     0.0    0.00    0.00    8635         _vl_vsss_advance(_IO_FILE*, int&) [30]
+-----------------------------------------------
+                0.00    0.00     800/1605        VL_FSCANF_IX(unsigned int, char const*, ...) [16]
+                0.00    0.00     805/1605        Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+[31]     0.0    0.00    0.00    1605         VL_CVT_I_FP(unsigned int) [31]
+                0.00    0.00    1605/41944667     Verilated::threadContextp() [28]
+-----------------------------------------------
+                0.00    0.00    1595/1595        _vl_vsscanf(_IO_FILE*, int, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, __va_list_tag*) [36]
+[32]     0.0    0.00    0.00    1595         _vl_vsss_skipspace(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+                0.00    0.00    4830/11030       _vl_vsss_peek(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [29]
+                0.00    0.00    3235/8635        _vl_vsss_advance(_IO_FILE*, int&) [30]
+-----------------------------------------------
+                0.00    0.00       1/1169        Vtb___024root___ctor_var_reset(Vtb___024root*) [100]
+                0.00    0.00      20/1169        VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) [87]
+                0.00    0.00      31/1169        VlWorkerThread::~VlWorkerThread() [68]
+                0.00    0.00      31/1169        void std::_V2::condition_variable_any::wait<VerilatedMutex>(VerilatedMutex&) [73]
+                0.00    0.00      40/1169        std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear() [35]
+                0.00    0.00      52/1169        Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+                0.00    0.00     182/1169        Vtb::Vtb(char const*) <cycle 1> [51]
+                0.00    0.00     192/1169        VlDelayScheduler::resume() [60]
+                0.00    0.00     194/1169        VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+                0.00    0.00     213/1169        VlCoroutine::VlPromise::final_suspend() [44]
+                0.00    0.00     213/1169        VlCoroutineHandle::VlCoroutineHandle(VlCoroutineHandle&&) [45]
+[33]     0.0    0.00    0.00    1169         std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00      31/31          std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [72]
+-----------------------------------------------
+                0.00    0.00      20/840         std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [63]
+                0.00    0.00      20/840         VL_PRINTF_MT(char const*, ...) [83]
+                0.00    0.00     800/840         _vl_vsscanf(_IO_FILE*, int, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, __va_list_tag*) [36]
+[34]     0.0    0.00    0.00     840         _vl_vsss_read_str(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char*, char const*) [clone .constprop.0] [34]
+                0.00    0.00    6200/11030       _vl_vsss_peek(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [29]
+                0.00    0.00    5400/8635        _vl_vsss_advance(_IO_FILE*, int&) [30]
+-----------------------------------------------
+                0.00    0.00      90/822         VlTriggerScheduler::resume(char const*) [61]
+                0.00    0.00      90/822         Vtb___024root___timing_resume(Vtb___024root*) [46]
+                0.00    0.00     321/822         Vtb___024root___timing_commit(Vtb___024root*) [39]
+                0.00    0.00     321/822         Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+[35]     0.0    0.00    0.00     822         std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear() [35]
+                0.00    0.00      40/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00      40/351         VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+-----------------------------------------------
+                0.00    0.00     800/800         VL_FSCANF_IX(unsigned int, char const*, ...) [16]
+[36]     0.0    0.00    0.00     800         _vl_vsscanf(_IO_FILE*, int, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, __va_list_tag*) [36]
+                0.00    0.00    1595/1595        _vl_vsss_skipspace(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+                0.00    0.00     800/840         _vl_vsss_read_str(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char*, char const*) [clone .constprop.0] [34]
+-----------------------------------------------
+                0.00    0.00      90/732         Vtb___024root___timing_resume(Vtb___024root*) [46]
+                0.00    0.00     321/732         Vtb___024root___timing_commit(Vtb___024root*) [39]
+                0.00    0.00     321/732         Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+[37]     0.0    0.00    0.00     732         VlTriggerScheduler::commit(char const*) [37]
+                0.00    0.00      24/238         VlCoroutine::VlPromise::final_suspend() [44]
+                0.00    0.00      20/213         VlCoroutineHandle::VlCoroutineHandle(VlCoroutineHandle&&) [45]
+                0.00    0.00      20/20          __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > std::copy<std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >(std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > >) [86]
+-----------------------------------------------
+                0.00    0.00       2/458         Vtb___024root::Vtb___024root(Vtb__Syms*, char const*) [124]
+                0.00    0.00      90/458         Vtb___024root___eval_phase__nba(Vtb___024root*) [2]
+                0.00    0.00     366/458         Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+[38]     0.0    0.00    0.00     458         VlTriggerVec<4ul>::clear() [38]
+-----------------------------------------------
+                0.00    0.00     366/366         Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+[39]     0.0    0.00    0.00     366         Vtb___024root___timing_commit(Vtb___024root*) [39]
+                0.00    0.00     321/822         std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear() [35]
+                0.00    0.00     321/732         VlTriggerScheduler::commit(char const*) [37]
+-----------------------------------------------
+                0.00    0.00     366/366         Vtb___024root___eval(Vtb___024root*) [3]
+[40]     0.0    0.00    0.00     366         Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+                0.00    0.00     366/458         VlTriggerVec<4ul>::clear() [38]
+                0.00    0.00     366/366         Vtb___024root___timing_commit(Vtb___024root*) [39]
+                0.00    0.00     366/366         Vtb___024root___eval_triggers__act(Vtb___024root*) [41]
+                0.00    0.00     321/822         std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear() [35]
+                0.00    0.00     321/732         VlTriggerScheduler::commit(char const*) [37]
+                0.00    0.00     185/185         Vtb___024root___timing_resume(Vtb___024root*) [46]
+                0.00    0.00      90/90          VlDelayScheduler::resume() [60]
+-----------------------------------------------
+                0.00    0.00     366/366         Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+[41]     0.0    0.00    0.00     366         Vtb___024root___eval_triggers__act(Vtb___024root*) [41]
+-----------------------------------------------
+                0.00    0.00      20/351         VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) [87]
+                0.00    0.00      26/351         Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+                0.00    0.00      91/351         Vtb::Vtb(char const*) <cycle 1> [51]
+                0.00    0.00      97/351         VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+                0.00    0.00     117/351         VlCoroutineHandle::VlCoroutineHandle(std::__n4861::coroutine_handle<void>, std::shared_ptr<VlProcess>, VlFileLineDebug) [48]
+[42]     0.0    0.00    0.00     351         std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2> const&) [42]
+-----------------------------------------------
+                                  97             VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+                0.00    0.00       1/351         Vtb___024root___ctor_var_reset(Vtb___024root*) [100]
+                0.00    0.00      40/351         std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear() [35]
+                0.00    0.00     192/351         VlDelayScheduler::resume() [60]
+[43]     0.0    0.00    0.00     330         VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+                0.00    0.00       1/117         _GLOBAL__sub_I__ZN9Verilated7s_debugE [47]
+                                   1             Vtb::Vtb(char const*) <cycle 1> [51]
+                                   1             Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+-----------------------------------------------
+                0.00    0.00       1/238         Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+                0.00    0.00      24/238         VlTriggerScheduler::commit(char const*) [37]
+                0.00    0.00     213/238         VlCoroutineHandle::VlCoroutineHandle(VlCoroutineHandle&&) [45]
+[44]     0.0    0.00    0.00     238         VlCoroutine::VlPromise::final_suspend() [44]
+                0.00    0.00     213/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+-----------------------------------------------
+                0.00    0.00      20/213         VlTriggerScheduler::commit(char const*) [37]
+                0.00    0.00      96/213         VlDelayScheduler::resume() [60]
+                0.00    0.00      97/213         VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+[45]     0.0    0.00    0.00     213         VlCoroutineHandle::VlCoroutineHandle(VlCoroutineHandle&&) [45]
+                0.00    0.00     213/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00     213/238         VlCoroutine::VlPromise::final_suspend() [44]
+-----------------------------------------------
+                0.00    0.00     185/185         Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+[46]     0.0    0.00    0.00     185         Vtb___024root___timing_resume(Vtb___024root*) [46]
+                0.00    0.00      90/822         std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear() [35]
+                0.00    0.00      90/732         VlTriggerScheduler::commit(char const*) [37]
+                0.00    0.00      90/90          VlTriggerScheduler::resume(char const*) [61]
+-----------------------------------------------
+                0.00    0.00       1/117         VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+                0.00    0.00     116/117         VlCoroutineHandle::resume() [49]
+[47]     0.0    0.00    0.00     117         _GLOBAL__sub_I__ZN9Verilated7s_debugE [47]
+                0.00    0.00       2/8           std::__mutex_base::__mutex_base() [91]
+-----------------------------------------------
+                0.00    0.00      20/117         VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) [87]
+                0.00    0.00      97/117         VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+[48]     0.0    0.00    0.00     117         VlCoroutineHandle::VlCoroutineHandle(std::__n4861::coroutine_handle<void>, std::shared_ptr<VlProcess>, VlFileLineDebug) [48]
+                0.00    0.00     117/351         std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2> const&) [42]
+-----------------------------------------------
+                0.00    0.00      20/116         VlTriggerScheduler::resume(char const*) [61]
+                0.00    0.00      96/116         VlDelayScheduler::resume() [60]
+[49]     0.0    0.00    0.00     116         VlCoroutineHandle::resume() [49]
+                0.00    0.00     116/117         _GLOBAL__sub_I__ZN9Verilated7s_debugE [47]
+                0.00    0.00      90/351         Vtb::Vtb(char const*) <cycle 1> [51]
+                0.00    0.00      26/351         Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+-----------------------------------------------
+                                   6             Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+                                  91             Vtb::Vtb(char const*) <cycle 1> [51]
+[50]     0.0    0.00    0.00      97         VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+                0.00    0.00     194/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00      97/351         std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2> const&) [42]
+                0.00    0.00      97/117         VlCoroutineHandle::VlCoroutineHandle(std::__n4861::coroutine_handle<void>, std::shared_ptr<VlProcess>, VlFileLineDebug) [48]
+                0.00    0.00      97/213         VlCoroutineHandle::VlCoroutineHandle(VlCoroutineHandle&&) [45]
+                                  97             VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+-----------------------------------------------
+                                   1             VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+                                   1             Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+                0.00    0.00      90/351         VlCoroutineHandle::resume() [49]
+[51]     0.0    0.00    0.00      92         Vtb::Vtb(char const*) <cycle 1> [51]
+                0.00    0.00     182/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00      91/351         std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2> const&) [42]
+                0.00    0.00       1/2           VlCoroutine::VlPromise::~VlPromise() [101]
+                                  91             VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+-----------------------------------------------
+                0.00    0.00       1/92          VlDeleter::~VlDeleter() [146]
+                0.00    0.00      91/92          Vtb::eval_step() [4]
+[52]     0.0    0.00    0.00      92         VlDeleter::deleteAll() [52]
+                0.00    0.00      92/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00      92/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00      92/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+-----------------------------------------------
+                0.00    0.00      91/91          main [1]
+[53]     0.0    0.00    0.00      91         VerilatedEvalMsgQueue::process() [53]
+-----------------------------------------------
+                0.00    0.00      91/91          Verilated::endOfEval(VerilatedEvalMsgQueue*) [58]
+[54]     0.0    0.00    0.00      91         VerilatedThreadMsgQueue::flush(VerilatedEvalMsgQueue*) [54]
+                0.00    0.00      91/91          VerilatedThreadMsgQueue::threadton() [55]
+-----------------------------------------------
+                0.00    0.00      91/91          VerilatedThreadMsgQueue::flush(VerilatedEvalMsgQueue*) [54]
+[55]     0.0    0.00    0.00      91         VerilatedThreadMsgQueue::threadton() [55]
+-----------------------------------------------
+                0.00    0.00      91/91          main [1]
+[56]     0.0    0.00    0.00      91         Vtb::nextTimeSlot() [56]
+-----------------------------------------------
+                0.00    0.00      91/91          main [1]
+[57]     0.0    0.00    0.00      91         Vtb::eventsPending() [57]
+-----------------------------------------------
+                0.00    0.00      91/91          main [1]
+[58]     0.0    0.00    0.00      91         Verilated::endOfEval(VerilatedEvalMsgQueue*) [58]
+                0.00    0.00      91/91          VerilatedThreadMsgQueue::flush(VerilatedEvalMsgQueue*) [54]
+-----------------------------------------------
+                0.00    0.00      91/91          main [1]
+[59]     0.0    0.00    0.00      91         VlDelayScheduler::nextTimeSlot() const [59]
+-----------------------------------------------
+                0.00    0.00      90/90          Vtb___024root___eval_phase__act(Vtb___024root*) [40]
+[60]     0.0    0.00    0.00      90         VlDelayScheduler::resume() [60]
+                0.00    0.00     192/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00     192/351         VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+                0.00    0.00      96/213         VlCoroutineHandle::VlCoroutineHandle(VlCoroutineHandle&&) [45]
+                0.00    0.00      96/116         VlCoroutineHandle::resume() [49]
+-----------------------------------------------
+                0.00    0.00      90/90          Vtb___024root___timing_resume(Vtb___024root*) [46]
+[61]     0.0    0.00    0.00      90         VlTriggerScheduler::resume(char const*) [61]
+                0.00    0.00      90/822         std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear() [35]
+                0.00    0.00      20/116         VlCoroutineHandle::resume() [49]
+-----------------------------------------------
+                0.00    0.00      31/62          VlWorkerThread::addTask(void (*)(void*, bool), void*, bool) [65]
+                0.00    0.00      31/62          void std::_V2::condition_variable_any::wait<VerilatedMutex>(VerilatedMutex&) [73]
+[62]     0.0    0.00    0.00      62         std::mutex::lock() [62]
+-----------------------------------------------
+                0.00    0.00      20/60          std::function<void ()>::function(std::function<void ()> const&) [82]
+                0.00    0.00      40/60          std::_Function_base::~_Function_base() [64]
+[63]     0.0    0.00    0.00      60         std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [63]
+                0.00    0.00      20/840         _vl_vsss_read_str(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char*, char const*) [clone .constprop.0] [34]
+-----------------------------------------------
+                0.00    0.00       2/42          VL_FINISH_MT(char const*, int, char const*) [115]
+                0.00    0.00      40/42          VL_PRINTF_MT(char const*, ...) [83]
+[64]     0.0    0.00    0.00      42         std::_Function_base::~_Function_base() [64]
+                0.00    0.00      40/60          std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [63]
+                0.00    0.00       2/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00      31/31          VlWorkerThread::~VlWorkerThread() [68]
+[65]     0.0    0.00    0.00      31         VlWorkerThread::addTask(void (*)(void*, bool), void*, bool) [65]
+                0.00    0.00      31/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00      31/31          void std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::_M_realloc_insert<void (*&)(void*, bool), void*&, bool&>(__gnu_cxx::__normal_iterator<VlWorkerThread::ExecRec*, std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> > >, void (*&)(void*, bool), void*&, bool&) [75]
+                0.00    0.00      31/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00      31/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+                0.00    0.00      31/62          std::mutex::lock() [62]
+-----------------------------------------------
+                0.00    0.00      31/31          VlWorkerThread::~VlWorkerThread() [68]
+[66]     0.0    0.00    0.00      31         VlWorkerThread::shutdown() [66]
+-----------------------------------------------
+                0.00    0.00      31/31          VlThreadPool::VlThreadPool(VerilatedContext*, unsigned int) [119]
+[67]     0.0    0.00    0.00      31         VlWorkerThread::VlWorkerThread(VerilatedContext*) [67]
+                0.00    0.00      31/31          std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::~unique_ptr() [69]
+-----------------------------------------------
+                0.00    0.00      31/31          VlThreadPool::~VlThreadPool() [121]
+[68]     0.0    0.00    0.00      31         VlWorkerThread::~VlWorkerThread() [68]
+                0.00    0.00      31/31          VlWorkerThread::addTask(void (*)(void*, bool), void*, bool) [65]
+                0.00    0.00      31/31          VlWorkerThread::shutdown() [66]
+                0.00    0.00      31/31          std::_Vector_base<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::~_Vector_base() [70]
+                0.00    0.00      31/31          std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [71]
+                0.00    0.00      31/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+-----------------------------------------------
+                0.00    0.00      31/31          VlWorkerThread::VlWorkerThread(VerilatedContext*) [67]
+[69]     0.0    0.00    0.00      31         std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::~unique_ptr() [69]
+-----------------------------------------------
+                0.00    0.00      31/31          VlWorkerThread::~VlWorkerThread() [68]
+[70]     0.0    0.00    0.00      31         std::_Vector_base<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::~_Vector_base() [70]
+-----------------------------------------------
+                0.00    0.00      31/31          VlWorkerThread::~VlWorkerThread() [68]
+[71]     0.0    0.00    0.00      31         std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [71]
+-----------------------------------------------
+                0.00    0.00      31/31          std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+[72]     0.0    0.00    0.00      31         std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [72]
+-----------------------------------------------
+                0.00    0.00      31/31          VlWorkerThread::workerLoop() [279]
+[73]     0.0    0.00    0.00      31         void std::_V2::condition_variable_any::wait<VerilatedMutex>(VerilatedMutex&) [73]
+                0.00    0.00      31/62          std::mutex::lock() [62]
+                0.00    0.00      31/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00      31/41944848     VerilatedMutex::lock() [26]
+-----------------------------------------------
+                0.00    0.00      31/31          std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(VlWorkerThread*, VerilatedContext*), VlWorkerThread*, VerilatedContext*> > >::~_State_impl() [389]
+[74]     0.0    0.00    0.00      31         std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(VlWorkerThread*, VerilatedContext*), VlWorkerThread*, VerilatedContext*> > >::~_State_impl() [74]
+-----------------------------------------------
+                0.00    0.00      31/31          VlWorkerThread::addTask(void (*)(void*, bool), void*, bool) [65]
+[75]     0.0    0.00    0.00      31         void std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::_M_realloc_insert<void (*&)(void*, bool), void*&, bool&>(__gnu_cxx::__normal_iterator<VlWorkerThread::ExecRec*, std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> > >, void (*&)(void*, bool), void*&, bool&) [75]
+-----------------------------------------------
+                0.00    0.00      31/31          VlWorkerThread::workerLoop() [279]
+[76]     0.0    0.00    0.00      31         std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::_M_erase(__gnu_cxx::__normal_iterator<VlWorkerThread::ExecRec*, std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> > >) [76]
+-----------------------------------------------
+                                   1             VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+                0.00    0.00       1/351         Vtb___024root___eval_initial__TOP__Vtiming__0(Vtb___024root*) [117]
+                0.00    0.00       1/351         Vtb___024root___eval_initial(Vtb___024root*) [116]
+                0.00    0.00      26/351         VlCoroutineHandle::resume() [49]
+[77]     0.0    0.00    0.00      29         Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+                0.00    0.00      52/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00      26/351         std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2> const&) [42]
+                0.00    0.00      20/20          VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) [87]
+                0.00    0.00       1/1           VL_FINISH_MT(char const*, int, char const*) [115]
+                0.00    0.00       1/238         VlCoroutine::VlPromise::final_suspend() [44]
+                0.00    0.00       1/2           VlCoroutine::VlPromise::~VlPromise() [101]
+                                   6             VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) <cycle 1> [50]
+                                   1             Vtb::Vtb(char const*) <cycle 1> [51]
+-----------------------------------------------
+                0.00    0.00       5/25          Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+                0.00    0.00      20/25          Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [5]
+[78]     0.0    0.00    0.00      25         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [78]
+-----------------------------------------------
+                0.00    0.00       1/21          VL_FINISH_MT(char const*, int, char const*) [115]
+                0.00    0.00      20/21          VL_PRINTF_MT(char const*, ...) [83]
+[79]     0.0    0.00    0.00      21         VerilatedMsg::VerilatedMsg(std::function<void ()> const&) [79]
+-----------------------------------------------
+                0.00    0.00       1/21          VL_FINISH_MT(char const*, int, char const*) [115]
+                0.00    0.00      20/21          VL_PRINTF_MT(char const*, ...) [83]
+[80]     0.0    0.00    0.00      21         VerilatedThreadMsgQueue::post(VerilatedMsg const&) [80]
+-----------------------------------------------
+                0.00    0.00       1/21          VL_FINISH_MT(char const*, int, char const*) [115]
+                0.00    0.00      20/21          VL_PRINTF_MT(char const*, ...) [83]
+[81]     0.0    0.00    0.00      21         std::function<void ()>::operator()() const [81]
+-----------------------------------------------
+                0.00    0.00       1/21          VL_FINISH_MT(char const*, int, char const*) [115]
+                0.00    0.00      20/21          VL_PRINTF_MT(char const*, ...) [83]
+[82]     0.0    0.00    0.00      21         std::function<void ()>::function(std::function<void ()> const&) [82]
+                0.00    0.00      20/60          std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [63]
+                0.00    0.00       1/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00      20/20          VL_WRITEF(char const*, ...) [17]
+[83]     0.0    0.00    0.00      20         VL_PRINTF_MT(char const*, ...) [83]
+                0.00    0.00      40/42          std::_Function_base::~_Function_base() [64]
+                0.00    0.00      20/20          _vl_string_vprintf[abi:cxx11](char const*, __va_list_tag*) [84]
+                0.00    0.00      20/840         _vl_vsss_read_str(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char*, char const*) [clone .constprop.0] [34]
+                0.00    0.00      20/21          std::function<void ()>::function(std::function<void ()> const&) [82]
+                0.00    0.00      20/21          VerilatedMsg::VerilatedMsg(std::function<void ()> const&) [79]
+                0.00    0.00      20/20          std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [85]
+                0.00    0.00      20/21          std::function<void ()>::operator()() const [81]
+                0.00    0.00      20/21          VerilatedThreadMsgQueue::post(VerilatedMsg const&) [80]
+-----------------------------------------------
+                0.00    0.00      20/20          VL_PRINTF_MT(char const*, ...) [83]
+[84]     0.0    0.00    0.00      20         _vl_string_vprintf[abi:cxx11](char const*, __va_list_tag*) [84]
+                0.00    0.00      20/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00      20/20          VL_PRINTF_MT(char const*, ...) [83]
+[85]     0.0    0.00    0.00      20         std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [85]
+-----------------------------------------------
+                0.00    0.00      20/20          VlTriggerScheduler::commit(char const*) [37]
+[86]     0.0    0.00    0.00      20         __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > std::copy<std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >(std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > >) [86]
+-----------------------------------------------
+                0.00    0.00      20/20          Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+[87]     0.0    0.00    0.00      20         VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) [87]
+                0.00    0.00      20/351         std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2> const&) [42]
+                0.00    0.00      20/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00      20/117         VlCoroutineHandle::VlCoroutineHandle(std::__n4861::coroutine_handle<void>, std::shared_ptr<VlProcess>, VlFileLineDebug) [48]
+                0.00    0.00       4/4           Vtb___024root::__Vconfigure(bool) [96]
+                0.00    0.00       2/2           std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::_M_check_len(unsigned long, char const*) const [104]
+                0.00    0.00       2/3           Vtb::threads() const [98]
+-----------------------------------------------
+                0.00    0.00       5/15          Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+                0.00    0.00      10/15          Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [5]
+[88]     0.0    0.00    0.00      15         VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+                0.00    0.00      15/41944667     Verilated::threadContextp() [28]
+                0.00    0.00      15/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00      15/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00      15/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+                0.00    0.00       1/2           std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::_M_default_append(unsigned long) [111]
+                0.00    0.00       1/2           std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::resize(unsigned long) [112]
+                0.00    0.00       1/2           std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(unsigned long) [113]
+                0.00    0.00       1/2           std::vector<unsigned int, std::allocator<unsigned int> >::resize(unsigned long) [114]
+-----------------------------------------------
+                0.00    0.00      10/10          Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [5]
+[89]     0.0    0.00    0.00      10         VL_FCLOSE_I(unsigned int) [89]
+                0.00    0.00      10/41944667     Verilated::threadContextp() [28]
+-----------------------------------------------
+                0.00    0.00      10/10          Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [5]
+[90]     0.0    0.00    0.00      10         VerilatedContextImp::fdClose(unsigned int) [90]
+                0.00    0.00      10/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00      10/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00      10/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+-----------------------------------------------
+                0.00    0.00       1/8           VerilatedSyms::VerilatedSyms(VerilatedContext*) [122]
+                0.00    0.00       2/8           _GLOBAL__sub_I__ZN9Verilated7s_debugE [47]
+                0.00    0.00       5/8           VerilatedContext::VerilatedContext() [136]
+[91]     0.0    0.00    0.00       8         std::__mutex_base::__mutex_base() [91]
+-----------------------------------------------
+                0.00    0.00       1/7           VlDelayScheduler::~VlDelayScheduler() [138]
+                0.00    0.00       2/7           Vtb___024root::~Vtb___024root() [125]
+                0.00    0.00       4/7           VlTriggerScheduler::~VlTriggerScheduler() [103]
+[92]     0.0    0.00    0.00       7         std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::~vector() [92]
+-----------------------------------------------
+                0.00    0.00       6/6           Vtb___024root___ctor_var_reset(Vtb___024root*) [100]
+[93]     0.0    0.00    0.00       6         VL_RAND_RESET_I(int) [93]
+                0.00    0.00       6/41944667     Verilated::threadContextp() [28]
+-----------------------------------------------
+                0.00    0.00       6/6           VlThreadPool::VlThreadPool(VerilatedContext*, unsigned int) [119]
+[94]     0.0    0.00    0.00       6         void std::vector<VlWorkerThread*, std::allocator<VlWorkerThread*> >::_M_realloc_insert<VlWorkerThread*>(__gnu_cxx::__normal_iterator<VlWorkerThread**, std::vector<VlWorkerThread*, std::allocator<VlWorkerThread*> > >, VlWorkerThread*&&) [94]
+-----------------------------------------------
+                0.00    0.00       5/5           Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [14]
+[95]     0.0    0.00    0.00       5         VL_CVT_PACK_STR_NW[abi:cxx11](int, unsigned int const*) [95]
+                0.00    0.00       5/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00       4/4           VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) [87]
+[96]     0.0    0.00    0.00       4         Vtb___024root::__Vconfigure(bool) [96]
+-----------------------------------------------
+                0.00    0.00       1/3           VerilatedContext::~VerilatedContext() [137]
+                0.00    0.00       1/3           VerilatedSyms::~VerilatedSyms() [123]
+                0.00    0.00       1/3           VerilatedSyms::VerilatedSyms(VerilatedContext*) [122]
+[97]     0.0    0.00    0.00       3         VerilatedContext::checkMagic(VerilatedContext const*) [97]
+-----------------------------------------------
+                0.00    0.00       1/3           VerilatedContext::addModel(VerilatedModel*) [133]
+                0.00    0.00       2/3           VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) [87]
+[98]     0.0    0.00    0.00       3         Vtb::threads() const [98]
+-----------------------------------------------
+                0.00    0.00       3/3           VerilatedContext::~VerilatedContext() [137]
+[99]     0.0    0.00    0.00       3         std::unique_ptr<VerilatedVirtualBase, std::default_delete<VerilatedVirtualBase> >::~unique_ptr() [99]
+-----------------------------------------------
+                                   1             Vtb___024root___ctor_var_reset(Vtb___024root*) [100]
+                0.00    0.00       1/2           Vtb___024root::~Vtb___024root() [125]
+                0.00    0.00       1/2           Vtb___024root::Vtb___024root(Vtb__Syms*, char const*) [124]
+[100]    0.0    0.00    0.00       2+1       Vtb___024root___ctor_var_reset(Vtb___024root*) [100]
+                0.00    0.00       6/6           VL_RAND_RESET_I(int) [93]
+                0.00    0.00       1/1169        std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [33]
+                0.00    0.00       1/351         VlCoroutineHandle::~VlCoroutineHandle() <cycle 1> [43]
+                                   1             Vtb___024root___ctor_var_reset(Vtb___024root*) [100]
+-----------------------------------------------
+                0.00    0.00       1/2           Vtb::Vtb(char const*) <cycle 1> [51]
+                0.00    0.00       1/2           Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+[101]    0.0    0.00    0.00       2         VlCoroutine::VlPromise::~VlPromise() [101]
+-----------------------------------------------
+                0.00    0.00       2/2           Vtb___024root___eval_initial(Vtb___024root*) [116]
+[102]    0.0    0.00    0.00       2         VlCoroutine::~VlCoroutine() [102]
+-----------------------------------------------
+                0.00    0.00       2/2           Vtb___024root::~Vtb___024root() [125]
+[103]    0.0    0.00    0.00       2         VlTriggerScheduler::~VlTriggerScheduler() [103]
+                0.00    0.00       4/7           std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::~vector() [92]
+-----------------------------------------------
+                0.00    0.00       2/2           VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>) [87]
+[104]    0.0    0.00    0.00       2         std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::_M_check_len(unsigned long, char const*) const [104]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(unsigned long) [113]
+[105]    0.0    0.00    0.00       2         std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [105]
+-----------------------------------------------
+                0.00    0.00       1/2           Vtb__Syms::~Vtb__Syms() [148]
+                0.00    0.00       1/2           VlDeleter::~VlDeleter() [146]
+[106]    0.0    0.00    0.00       2         std::_Vector_base<VlDeletable*, std::allocator<VlDeletable*> >::~_Vector_base() [106]
+-----------------------------------------------
+                0.00    0.00       2/2           VerilatedContext::~VerilatedContext() [137]
+[107]    0.0    0.00    0.00       2         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [107]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::_M_default_append(unsigned long) [111]
+[108]    0.0    0.00    0.00       2         _IO_FILE** std::__uninitialized_default_n_1<true>::__uninit_default_n<_IO_FILE**, unsigned long>(_IO_FILE**, unsigned long) [108]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(unsigned long) [113]
+[109]    0.0    0.00    0.00       2         unsigned int* std::__uninitialized_default_n_1<true>::__uninit_default_n<unsigned int*, unsigned long>(unsigned int*, unsigned long) [109]
+-----------------------------------------------
+                0.00    0.00       1/2           VerilatedContextImp::commandArgsAddGuts(int, char const**) [141]
+                0.00    0.00       1/2           VerilatedContextImp::commandArgsGuts(int, char const**) [140]
+[110]    0.0    0.00    0.00       2         std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::clear() [110]
+-----------------------------------------------
+                0.00    0.00       1/2           VerilatedContext::VerilatedContext() [136]
+                0.00    0.00       1/2           VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+[111]    0.0    0.00    0.00       2         std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::_M_default_append(unsigned long) [111]
+                0.00    0.00       2/2           _IO_FILE** std::__uninitialized_default_n_1<true>::__uninit_default_n<_IO_FILE**, unsigned long>(_IO_FILE**, unsigned long) [108]
+-----------------------------------------------
+                0.00    0.00       1/2           VerilatedContext::VerilatedContext() [136]
+                0.00    0.00       1/2           VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+[112]    0.0    0.00    0.00       2         std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::resize(unsigned long) [112]
+-----------------------------------------------
+                0.00    0.00       1/2           VerilatedContext::VerilatedContext() [136]
+                0.00    0.00       1/2           VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+[113]    0.0    0.00    0.00       2         std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(unsigned long) [113]
+                0.00    0.00       2/2           std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [105]
+                0.00    0.00       2/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00       2/2           unsigned int* std::__uninitialized_default_n_1<true>::__uninit_default_n<unsigned int*, unsigned long>(unsigned int*, unsigned long) [109]
+-----------------------------------------------
+                0.00    0.00       1/2           VerilatedContext::VerilatedContext() [136]
+                0.00    0.00       1/2           VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [88]
+[114]    0.0    0.00    0.00       2         std::vector<unsigned int, std::allocator<unsigned int> >::resize(unsigned long) [114]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+[115]    0.0    0.00    0.00       1         VL_FINISH_MT(char const*, int, char const*) [115]
+                0.00    0.00       2/42          std::_Function_base::~_Function_base() [64]
+                0.00    0.00       1/21          std::function<void ()>::function(std::function<void ()> const&) [82]
+                0.00    0.00       1/21          VerilatedMsg::VerilatedMsg(std::function<void ()> const&) [79]
+                0.00    0.00       1/1           VerilatedContext::gotFinish(bool) [135]
+                0.00    0.00       1/1           vl_finish(char const*, int, char const*) [118]
+                0.00    0.00       1/1           std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [156]
+                0.00    0.00       1/21          std::function<void ()>::operator()() const [81]
+                0.00    0.00       1/21          VerilatedThreadMsgQueue::post(VerilatedMsg const&) [80]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb::eval_step() [4]
+[116]    0.0    0.00    0.00       1         Vtb___024root___eval_initial(Vtb___024root*) [116]
+                0.00    0.00       2/2           VlCoroutine::~VlCoroutine() [102]
+                0.00    0.00       1/1           Vtb___024root___eval_initial__TOP__Vtiming__0(Vtb___024root*) [117]
+                0.00    0.00       1/351         Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb___024root___eval_initial(Vtb___024root*) [116]
+[117]    0.0    0.00    0.00       1         Vtb___024root___eval_initial__TOP__Vtiming__0(Vtb___024root*) [117]
+                0.00    0.00       1/351         Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) <cycle 1> [77]
+-----------------------------------------------
+                0.00    0.00       1/1           VL_FINISH_MT(char const*, int, char const*) [115]
+[118]    0.0    0.00    0.00       1         vl_finish(char const*, int, char const*) [118]
+                0.00    0.00       1/41944667     Verilated::threadContextp() [28]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContext::threadPoolp() [131]
+[119]    0.0    0.00    0.00       1         VlThreadPool::VlThreadPool(VerilatedContext*, unsigned int) [119]
+                0.00    0.00      31/31          VlWorkerThread::VlWorkerThread(VerilatedContext*) [67]
+                0.00    0.00       6/6           void std::vector<VlWorkerThread*, std::allocator<VlWorkerThread*> >::_M_realloc_insert<VlWorkerThread*>(__gnu_cxx::__normal_iterator<VlWorkerThread**, std::vector<VlWorkerThread*, std::allocator<VlWorkerThread*> > >, VlWorkerThread*&&) [94]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContext::~VerilatedContext() [137]
+[120]    0.0    0.00    0.00       1         VlThreadPool::~VlThreadPool() [120]
+                0.00    0.00       1/1           std::_Vector_base<VlWorkerThread*, std::allocator<VlWorkerThread*> >::~_Vector_base() [153]
+                0.00    0.00       1/1           VlThreadPool::~VlThreadPool() [121]
+-----------------------------------------------
+                0.00    0.00       1/1           VlThreadPool::~VlThreadPool() [120]
+[121]    0.0    0.00    0.00       1         VlThreadPool::~VlThreadPool() [121]
+                0.00    0.00      31/31          VlWorkerThread::~VlWorkerThread() [68]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb__Syms::Vtb__Syms(VerilatedContext*, char const*, Vtb*) [147]
+[122]    0.0    0.00    0.00       1         VerilatedSyms::VerilatedSyms(VerilatedContext*) [122]
+                0.00    0.00       1/3           VerilatedContext::checkMagic(VerilatedContext const*) [97]
+                0.00    0.00       1/8           std::__mutex_base::__mutex_base() [91]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb::~Vtb() [144]
+[123]    0.0    0.00    0.00       1         VerilatedSyms::~VerilatedSyms() [123]
+                0.00    0.00       1/3           VerilatedContext::checkMagic(VerilatedContext const*) [97]
+                0.00    0.00       1/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb__Syms::Vtb__Syms(VerilatedContext*, char const*, Vtb*) [147]
+[124]    0.0    0.00    0.00       1         Vtb___024root::Vtb___024root(Vtb__Syms*, char const*) [124]
+                0.00    0.00       2/458         VlTriggerVec<4ul>::clear() [38]
+                0.00    0.00       1/1           VerilatedModule::VerilatedModule(char const*) [127]
+                0.00    0.00       1/2           Vtb___024root___ctor_var_reset(Vtb___024root*) [100]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb__Syms::~Vtb__Syms() [148]
+[125]    0.0    0.00    0.00       1         Vtb___024root::~Vtb___024root() [125]
+                0.00    0.00       2/7           std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::~vector() [92]
+                0.00    0.00       2/2           VlTriggerScheduler::~VlTriggerScheduler() [103]
+                0.00    0.00       1/2           Vtb___024root___ctor_var_reset(Vtb___024root*) [100]
+                0.00    0.00       1/1           VlDelayScheduler::~VlDelayScheduler() [138]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb::Vtb(VerilatedContext*, char const*) [142]
+[126]    0.0    0.00    0.00       1         VerilatedModel::VerilatedModel(VerilatedContext&) [126]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb___024root::Vtb___024root(Vtb__Syms*, char const*) [124]
+[127]    0.0    0.00    0.00       1         VerilatedModule::VerilatedModule(char const*) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb__Syms::~Vtb__Syms() [148]
+[128]    0.0    0.00    0.00       1         VerilatedModule::~VerilatedModule() [128]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContext::VerilatedContext() [136]
+[129]    0.0    0.00    0.00       1         VerilatedContext::Serialized::Serialized() [129]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[130]    0.0    0.00    0.00       1         VerilatedContext::commandArgs(int, char const**) [130]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContext::addModel(VerilatedModel*) [133]
+[131]    0.0    0.00    0.00       1         VerilatedContext::threadPoolp() [131]
+                0.00    0.00       1/1           VlThreadPool::VlThreadPool(VerilatedContext*, unsigned int) [119]
+                0.00    0.00       1/1           std::__uniq_ptr_impl<VerilatedVirtualBase, std::default_delete<VerilatedVirtualBase> >::reset(VerilatedVirtualBase*) [155]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<VerilatedContextImpData, std::default_delete<VerilatedContextImpData> >::~unique_ptr() [150]
+[132]    0.0    0.00    0.00       1         VerilatedContext::threadPoolpOnClone() [132]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[133]    0.0    0.00    0.00       1         VerilatedContext::addModel(VerilatedModel*) [133]
+                0.00    0.00       1/1           VerilatedContext::threadPoolp() [131]
+                0.00    0.00       1/3           Vtb::threads() const [98]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb__Syms::Vtb__Syms(VerilatedContext*, char const*, Vtb*) [147]
+[134]    0.0    0.00    0.00       1         VerilatedContext::timeunit(int) [134]
+                0.00    0.00       1/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00       1/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00       1/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+-----------------------------------------------
+                0.00    0.00       1/1           VL_FINISH_MT(char const*, int, char const*) [115]
+[135]    0.0    0.00    0.00       1         VerilatedContext::gotFinish(bool) [135]
+                0.00    0.00       1/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00       1/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00       1/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[136]    0.0    0.00    0.00       1         VerilatedContext::VerilatedContext() [136]
+                0.00    0.00       5/8           std::__mutex_base::__mutex_base() [91]
+                0.00    0.00       1/1           VerilatedContext::Serialized::Serialized() [129]
+                0.00    0.00       1/2           std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::_M_default_append(unsigned long) [111]
+                0.00    0.00       1/2           std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::resize(unsigned long) [112]
+                0.00    0.00       1/2           std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(unsigned long) [113]
+                0.00    0.00       1/2           std::vector<unsigned int, std::allocator<unsigned int> >::resize(unsigned long) [114]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<VerilatedContext, std::default_delete<VerilatedContext> >::~unique_ptr() [149]
+[137]    0.0    0.00    0.00       1         VerilatedContext::~VerilatedContext() [137]
+                0.00    0.00       3/3           std::unique_ptr<VerilatedVirtualBase, std::default_delete<VerilatedVirtualBase> >::~unique_ptr() [99]
+                0.00    0.00       2/2           std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [107]
+                0.00    0.00       1/3           VerilatedContext::checkMagic(VerilatedContext const*) [97]
+                0.00    0.00       1/1           std::_Vector_base<_IO_FILE*, std::allocator<_IO_FILE*> >::~_Vector_base() [154]
+                0.00    0.00       1/1           VlThreadPool::~VlThreadPool() [120]
+                0.00    0.00       1/1           std::unique_ptr<VerilatedContextImpData, std::default_delete<VerilatedContextImpData> >::~unique_ptr() [150]
+                0.00    0.00       1/1           std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector() [158]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb___024root::~Vtb___024root() [125]
+[138]    0.0    0.00    0.00       1         VlDelayScheduler::~VlDelayScheduler() [138]
+                0.00    0.00       1/7           std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::~vector() [92]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContextImp::commandArgsAddGuts(int, char const**) [141]
+[139]    0.0    0.00    0.00       1         VerilatedContextImp::commandArgVl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [139]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[140]    0.0    0.00    0.00       1         VerilatedContextImp::commandArgsGuts(int, char const**) [140]
+                0.00    0.00       1/41944848     VerilatedMutex::lock() [26]
+                0.00    0.00       1/2           std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::clear() [110]
+                0.00    0.00       1/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00       1/41944817     VerilatedLockGuard::~VerilatedLockGuard() [27]
+                0.00    0.00       1/1           VerilatedContextImp::commandArgsAddGuts(int, char const**) [141]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContextImp::commandArgsGuts(int, char const**) [140]
+[141]    0.0    0.00    0.00       1         VerilatedContextImp::commandArgsAddGuts(int, char const**) [141]
+                0.00    0.00       2/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+                0.00    0.00       1/2           std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::clear() [110]
+                0.00    0.00       1/1           void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<char const*&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, char const*&) [157]
+                0.00    0.00       1/1           VerilatedContextImp::commandArgVl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [139]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[142]    0.0    0.00    0.00       1         Vtb::Vtb(VerilatedContext*, char const*) [142]
+                0.00    0.00       1/1           VerilatedModel::VerilatedModel(VerilatedContext&) [126]
+                0.00    0.00       1/1           Vtb__Syms::Vtb__Syms(VerilatedContext*, char const*, Vtb*) [147]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[143]    0.0    0.00    0.00       1         Vtb::~Vtb() [143]
+                0.00    0.00       1/1           Vtb::~Vtb() [144]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb::~Vtb() [143]
+[144]    0.0    0.00    0.00       1         Vtb::~Vtb() [144]
+                0.00    0.00       1/1           VerilatedSyms::~VerilatedSyms() [123]
+                0.00    0.00       1/1           Vtb__Syms::~Vtb__Syms() [148]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[145]    0.0    0.00    0.00       1         Verilated::debug(int) [145]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb__Syms::~Vtb__Syms() [148]
+[146]    0.0    0.00    0.00       1         VlDeleter::~VlDeleter() [146]
+                0.00    0.00       1/92          VlDeleter::deleteAll() [52]
+                0.00    0.00       1/2           std::_Vector_base<VlDeletable*, std::allocator<VlDeletable*> >::~_Vector_base() [106]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb::Vtb(VerilatedContext*, char const*) [142]
+[147]    0.0    0.00    0.00       1         Vtb__Syms::Vtb__Syms(VerilatedContext*, char const*, Vtb*) [147]
+                0.00    0.00       1/1           VerilatedSyms::VerilatedSyms(VerilatedContext*) [122]
+                0.00    0.00       1/1           Vtb___024root::Vtb___024root(Vtb__Syms*, char const*) [124]
+                0.00    0.00       1/1           VerilatedContext::timeunit(int) [134]
+-----------------------------------------------
+                0.00    0.00       1/1           Vtb::~Vtb() [144]
+[148]    0.0    0.00    0.00       1         Vtb__Syms::~Vtb__Syms() [148]
+                0.00    0.00       1/1           VerilatedModule::~VerilatedModule() [128]
+                0.00    0.00       1/1           Vtb___024root::~Vtb___024root() [125]
+                0.00    0.00       1/2           std::_Vector_base<VlDeletable*, std::allocator<VlDeletable*> >::~_Vector_base() [106]
+                0.00    0.00       1/1           VlDeleter::~VlDeleter() [146]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[149]    0.0    0.00    0.00       1         std::unique_ptr<VerilatedContext, std::default_delete<VerilatedContext> >::~unique_ptr() [149]
+                0.00    0.00       1/1           VerilatedContext::~VerilatedContext() [137]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContext::~VerilatedContext() [137]
+[150]    0.0    0.00    0.00       1         std::unique_ptr<VerilatedContextImpData, std::default_delete<VerilatedContextImpData> >::~unique_ptr() [150]
+                0.00    0.00       1/1           VerilatedContext::threadPoolpOnClone() [132]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[151]    0.0    0.00    0.00       1         std::unique_ptr<Vtb, std::default_delete<Vtb> >::~unique_ptr() [151]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedThreadMsgQueue::~VerilatedThreadMsgQueue() [317]
+[152]    0.0    0.00    0.00       1         void std::_Destroy_aux<false>::__destroy<VerilatedMsg*>(VerilatedMsg*, VerilatedMsg*) [152]
+-----------------------------------------------
+                0.00    0.00       1/1           VlThreadPool::~VlThreadPool() [120]
+[153]    0.0    0.00    0.00       1         std::_Vector_base<VlWorkerThread*, std::allocator<VlWorkerThread*> >::~_Vector_base() [153]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContext::~VerilatedContext() [137]
+[154]    0.0    0.00    0.00       1         std::_Vector_base<_IO_FILE*, std::allocator<_IO_FILE*> >::~_Vector_base() [154]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContext::threadPoolp() [131]
+[155]    0.0    0.00    0.00       1         std::__uniq_ptr_impl<VerilatedVirtualBase, std::default_delete<VerilatedVirtualBase> >::reset(VerilatedVirtualBase*) [155]
+-----------------------------------------------
+                0.00    0.00       1/1           VL_FINISH_MT(char const*, int, char const*) [115]
+[156]    0.0    0.00    0.00       1         std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [156]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContextImp::commandArgsAddGuts(int, char const**) [141]
+[157]    0.0    0.00    0.00       1         void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<char const*&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, char const*&) [157]
+                0.00    0.00       2/125832572     std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContext::~VerilatedContext() [137]
+[158]    0.0    0.00    0.00       1         std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector() [158]
+-----------------------------------------------
+                0.00    0.00       1/1           VerilatedContextImp::scopeInsert(VerilatedScope const*) [308]
+[159]    0.0    0.00    0.00       1         std::__cxx11::_List_base<std::pair<void (*)(void*), void*>, std::allocator<std::pair<void (*)(void*), void*> > >::_M_clear() [159]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [47] _GLOBAL__sub_I__ZN9Verilated7s_debugE [68] VlWorkerThread::~VlWorkerThread() [104] std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::_M_check_len(unsigned long, char const*) const
+   [6] VL_FWRITEF(unsigned int, char const*, ...) [10] VerilatedFpList::push_back(_IO_FILE*) [105] std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const
+  [31] VL_CVT_I_FP(unsigned int) [127] VerilatedModule::VerilatedModule(char const*) [81] std::function<void ()>::operator()() const
+  [89] VL_FCLOSE_I(unsigned int) [128] VerilatedModule::~VerilatedModule() [149] std::unique_ptr<VerilatedContext, std::default_delete<VerilatedContext> >::~unique_ptr()
+  [88] VL_FOPEN_NN(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [129] VerilatedContext::Serialized::Serialized() [99] std::unique_ptr<VerilatedVirtualBase, std::default_delete<VerilatedVirtualBase> >::~unique_ptr()
+  [36] _vl_vsscanf(_IO_FILE*, int, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, __va_list_tag*) [97] VerilatedContext::checkMagic(VerilatedContext const*) [150] std::unique_ptr<VerilatedContextImpData, std::default_delete<VerilatedContextImpData> >::~unique_ptr()
+ [115] VL_FINISH_MT(char const*, int, char const*) [130] VerilatedContext::commandArgs(int, char const**) [151] std::unique_ptr<Vtb, std::default_delete<Vtb> >::~unique_ptr()
+  [16] VL_FSCANF_IX(unsigned int, char const*, ...) [131] VerilatedContext::threadPoolp() [69] std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::~unique_ptr()
+  [83] VL_PRINTF_MT(char const*, ...) [132] VerilatedContext::threadPoolpOnClone() [152] void std::_Destroy_aux<false>::__destroy<VerilatedMsg*>(VerilatedMsg*, VerilatedMsg*)
+   [9] _vl_vsformat(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*, __va_list_tag*) [133] VerilatedContext::addModel(VerilatedModel*) [70] std::_Vector_base<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::~_Vector_base()
+  [93] VL_RAND_RESET_I(int)  [134] VerilatedContext::timeunit(int) [106] std::_Vector_base<VlDeletable*, std::allocator<VlDeletable*> >::~_Vector_base()
+  [12] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > _vl_vsformat_time<double>(char*, double, int, bool, unsigned long) [135] VerilatedContext::gotFinish(bool) [153] std::_Vector_base<VlWorkerThread*, std::allocator<VlWorkerThread*> >::~_Vector_base()
+  [95] VL_CVT_PACK_STR_NW[abi:cxx11](int, unsigned int const*) [136] VerilatedContext::VerilatedContext() [154] std::_Vector_base<_IO_FILE*, std::allocator<_IO_FILE*> >::~_Vector_base()
+  [84] _vl_string_vprintf[abi:cxx11](char const*, __va_list_tag*) [137] VerilatedContext::~VerilatedContext() [107] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base()
+   [3] Vtb___024root___eval(Vtb___024root*) [60] VlDelayScheduler::resume() [91] std::__mutex_base::__mutex_base()
+  [13] Vtb___024root___eval_nba(Vtb___024root*) [138] VlDelayScheduler::~VlDelayScheduler() [42] std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<VlProcess, (__gnu_cxx::_Lock_policy)2> const&)
+ [116] Vtb___024root___eval_initial(Vtb___024root*) [49] VlCoroutineHandle::resume() [64] std::_Function_base::~_Function_base()
+  [39] Vtb___024root___timing_commit(Vtb___024root*) [48] VlCoroutineHandle::VlCoroutineHandle(std::__n4861::coroutine_handle<void>, std::shared_ptr<VlProcess>, VlFileLineDebug) [33] std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count()
+  [46] Vtb___024root___timing_resume(Vtb___024root*) [45] VlCoroutineHandle::VlCoroutineHandle(VlCoroutineHandle&&) [155] std::__uniq_ptr_impl<VerilatedVirtualBase, std::default_delete<VerilatedVirtualBase> >::reset(VerilatedVirtualBase*)
+ [100] Vtb___024root___ctor_var_reset(Vtb___024root*) [43] VlCoroutineHandle::~VlCoroutineHandle() [25] std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  [40] Vtb___024root___eval_phase__act(Vtb___024root*) [27] VerilatedLockGuard::~VerilatedLockGuard() [156] std::_Function_handler<void (), VL_FINISH_MT(char const*, int, char const*)::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+   [2] Vtb___024root___eval_phase__nba(Vtb___024root*) [37] VlTriggerScheduler::commit(char const*) [63] std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  [41] Vtb___024root___eval_triggers__act(Vtb___024root*) [61] VlTriggerScheduler::resume(char const*) [85] std::_Function_handler<void (), VL_PRINTF_MT(char const*, ...)::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+ [117] Vtb___024root___eval_initial__TOP__Vtiming__0(Vtb___024root*) [103] VlTriggerScheduler::~VlTriggerScheduler() [71] std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  [77] Vtb___024root___eval_initial__TOP__Vtiming__1(Vtb___024root*) [8] VerilatedContextImp::fdToFpList(unsigned int) [72] std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  [14] Vtb___024root___nba_sequent__TOP__0__PROF__performance_degrade__l62(Vtb___024root*) [139] VerilatedContextImp::commandArgVl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [108] _IO_FILE** std::__uninitialized_default_n_1<true>::__uninit_default_n<_IO_FILE**, unsigned long>(_IO_FILE**, unsigned long)
+   [5] Vtb___024root___nba_sequent__TOP__1__PROF__performance_degrade__l65(Vtb___024root*) [140] VerilatedContextImp::commandArgsGuts(int, char const**) [109] unsigned int* std::__uninitialized_default_n_1<true>::__uninit_default_n<unsigned int*, unsigned long>(unsigned int*, unsigned long)
+  [17] VL_WRITEF(char const*, ...) [141] VerilatedContextImp::commandArgsAddGuts(int, char const**) [73] void std::_V2::condition_variable_any::wait<VerilatedMutex>(VerilatedMutex&)
+ [118] vl_finish(char const*, int, char const*) [15] VerilatedContextImp::fdToFp(unsigned int) [62] std::mutex::lock()
+  [29] _vl_vsss_peek(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [90] VerilatedContextImp::fdClose(unsigned int) [74] std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(VlWorkerThread*, VerilatedContext*), VlWorkerThread*, VerilatedContext*> > >::~_State_impl()
+  [30] _vl_vsss_advance(_IO_FILE*, int&) [7] VerilatedContextImp::fdWrite(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [35] std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::clear()
+  [34] _vl_vsss_read_str(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char*, char const*) [clone .constprop.0] [53] VerilatedEvalMsgQueue::process() [92] std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> >::~vector()
+  [32] _vl_vsss_skipspace(_IO_FILE*, int&, unsigned int const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [80] VerilatedThreadMsgQueue::post(VerilatedMsg const&) [75] void std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::_M_realloc_insert<void (*&)(void*, bool), void*&, bool&>(__gnu_cxx::__normal_iterator<VlWorkerThread::ExecRec*, std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> > >, void (*&)(void*, bool), void*&, bool&)
+  [44] VlCoroutine::VlPromise::final_suspend() [54] VerilatedThreadMsgQueue::flush(VerilatedEvalMsgQueue*) [76] std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> >::_M_erase(__gnu_cxx::__normal_iterator<VlWorkerThread::ExecRec*, std::vector<VlWorkerThread::ExecRec, std::allocator<VlWorkerThread::ExecRec> > >)
+ [101] VlCoroutine::VlPromise::~VlPromise() [55] VerilatedThreadMsgQueue::threadton() [157] void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<char const*&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, char const*&)
+ [102] VlCoroutine::~VlCoroutine() [56] Vtb::nextTimeSlot() [110] std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::clear()
+  [79] VerilatedMsg::VerilatedMsg(std::function<void ()> const&) [57] Vtb::eventsPending() [158] std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()
+ [119] VlThreadPool::VlThreadPool(VerilatedContext*, unsigned int) [4] Vtb::eval_step() [94] void std::vector<VlWorkerThread*, std::allocator<VlWorkerThread*> >::_M_realloc_insert<VlWorkerThread*>(__gnu_cxx::__normal_iterator<VlWorkerThread**, std::vector<VlWorkerThread*, std::allocator<VlWorkerThread*> > >, VlWorkerThread*&&)
+ [120] VlThreadPool::~VlThreadPool() [142] Vtb::Vtb(VerilatedContext*, char const*) [111] std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::_M_default_append(unsigned long)
+ [121] VlThreadPool::~VlThreadPool() [51] Vtb::Vtb(char const*) [112] std::vector<_IO_FILE*, std::allocator<_IO_FILE*> >::resize(unsigned long)
+  [38] VlTriggerVec<4ul>::clear() [143] Vtb::~Vtb()      [113] std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(unsigned long)
+ [122] VerilatedSyms::VerilatedSyms(VerilatedContext*) [144] Vtb::~Vtb() [114] std::vector<unsigned int, std::allocator<unsigned int> >::resize(unsigned long)
+ [123] VerilatedSyms::~VerilatedSyms() [28] Verilated::threadContextp() [159] std::__cxx11::_List_base<std::pair<void (*)(void*), void*>, std::allocator<std::pair<void (*)(void*), void*> > >::_M_clear()
+  [96] Vtb___024root::__Vconfigure(bool) [145] Verilated::debug(int) [78] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+ [124] Vtb___024root::Vtb___024root(Vtb__Syms*, char const*) [58] Verilated::endOfEval(VerilatedEvalMsgQueue*) [82] std::function<void ()>::function(std::function<void ()> const&)
+ [125] Vtb___024root::~Vtb___024root() [52] VlDeleter::deleteAll() [86] __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > std::copy<std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >(std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, std::move_iterator<__gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > > >, __gnu_cxx::__normal_iterator<VlCoroutineHandle*, std::vector<VlCoroutineHandle, std::allocator<VlCoroutineHandle> > >)
+ [126] VerilatedModel::VerilatedModel(VerilatedContext&) [146] VlDeleter::~VlDeleter() [11] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [26] VerilatedMutex::lock() [147] Vtb__Syms::Vtb__Syms(VerilatedContext*, char const*, Vtb*) [50] VlDelayScheduler::delay(unsigned long, std::shared_ptr<VlProcess>, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>)
+  [65] VlWorkerThread::addTask(void (*)(void*, bool), void*, bool) [148] Vtb__Syms::~Vtb__Syms() [87] VlTriggerScheduler::trigger(bool, std::shared_ptr<VlProcess>, char const*, char const*, int)::Awaitable::await_suspend(std::__n4861::coroutine_handle<void>)
+  [66] VlWorkerThread::shutdown() [59] VlDelayScheduler::nextTimeSlot() const [18] <cycle 1>
+  [67] VlWorkerThread::VlWorkerThread(VerilatedContext*) [98] Vtb::threads() const
